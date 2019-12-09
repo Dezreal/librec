@@ -72,7 +72,7 @@ public class EvalContext {
      *
      * @return the test set ground truth list
      */
-    public RecommendedList getGroundTruthListFromSparseMatrix(SequentialAccessSparseMatrix testMatrix) {
+    public static RecommendedList getGroundTruthListFromSparseMatrix(SequentialAccessSparseMatrix testMatrix) {
         int numUsers = testMatrix.rowSize();
         RecommendedList groundTruthList = new RecommendedList(numUsers);
         for (int userIdx = 0; userIdx < numUsers; ++userIdx) {
