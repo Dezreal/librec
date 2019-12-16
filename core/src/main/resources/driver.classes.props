@@ -5,6 +5,7 @@ string=net.librec.util.StringUtil
 text=net.librec.data.model.TextDataModel
 jdbc=net.librec.data.model.JDBCDataModel
 arff=net.librec.data.model.ArffDataModel
+textsequence=LibDL.recommender.data.model.TextSequenceDataModel
 #DataAppender(-appender)
 social=net.librec.data.convertor.appender.SocialDataAppender
 document=net.librec.data.convertor.appender.DocumentDataAppender
@@ -113,6 +114,7 @@ autorec=net.librec.recommender.nn.rating.AutoRecRecommender
 cdae=net.librec.recommender.nn.ranking.CDAERecommender
 rankgeofm=net.librec.recommender.poi.RankGeoFMRecommender
 usg=net.librec.recommender.poi.USGRecommender
+libdlcaser=LibDL.recommender.CaserRecommender
 #Evaluator(-eval)
 auc=net.librec.eval.ranking.AUCEvaluator
 ap=net.librec.eval.ranking.AveragePrecisionEvaluator

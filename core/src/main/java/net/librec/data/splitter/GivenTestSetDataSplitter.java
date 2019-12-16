@@ -70,7 +70,7 @@ public class GivenTestSetDataSplitter extends AbstractDataSplitter {
         }
         switch (dataFormat.toLowerCase()){
             case "text":
-
+            case "textsequence":
                 String dataColumnFormat = conf.get(Configured.CONF_DATA_COLUMN_FORMAT, "UIR");
                 testConvertor = new TextDataConvertor(dataColumnFormat,
                         inputDataPath,"[\t;, ]");
